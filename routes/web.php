@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//配置路由
+Route::any('mail/send','MailController@send');
